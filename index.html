@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fast Food Menu Order Form</title>
+<link href="style.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script src="scriptfile.js"></script>
+<body>
+<h2 style="text-align: center;">This is our fast food menu:</h2>
+<div class="row">
+  <div class="column" style="background-color:#e7d69d;">
+    <h2>Menu</h2>
+    <p>1. Hamburguer</p>
+    <p>2. Pizza</p>
+    <p>3. Fish and Chips</p>
+    <p>4. Salad</p>
+    <p>5. Sandwich</p>
+  </div>
+  <div class="column" style="background-color:#e4aa53;">
+    <h2>Price without Meat</h2>
+    <p>$5.5</p>
+    <p>$5.5</p>
+    <p>$5.5</p>
+    <p>$5.5</p>
+    <p>$5.5</p>
+  </div>
+  <div class="column" style="background-color:#ceb95d;">
+    <h2>Price with Meat (Yes)</h2>
+    <p>$8.5</p>
+    <p>$8.5</p>
+    <p>$8.5</p>
+    <p>$8.5</p>
+    <p>$8.5</p>
+  </div>
+</div>
+<br>
+<fieldset>
+  <legend>Order now:</legend>
+  <div class="radios">                                                 
+  <input type="radio" id="radio1" name="Food" value="Hamburguer"> 1. Hamburguer<br>
+  <input type="radio" id="radio2" name="Food" value="Pizza"> 2. Pizza<br>     
+  <input type="radio" id="radio3" name="Food" value="Fish and Chips"> 3. Fish and Chips<br> 
+  <input type="radio" id="radio4" name="Food" value="Salad"> 4. Salad<br>   
+  <input type="radio" id="radio5" name="Food" value="Sandwich"> 5. Sandwich    
+  </div>
+  </fieldset>
+<br>
+<div>
+  <input type="checkbox" id="withmeat" name="withmeat"
+         checked>
+  <label for="withmeat">Price with meat ($3 dollars plus)</label>
+</div>
+<br>
+<br>
+<button id="button" type="button" name="calculate" onclick="calculate()">Calculate</button>
+<br>
+  <br>
+  <br>
+  Total Price: <input id="price" type="text" name="Price" >
+</body>
+</html>
